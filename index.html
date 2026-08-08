@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coaching Attendance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coaching Attendance Tracker</title>
+    
+    <!-- PWA Manifest Link -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2c3e50">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎓 Student Attendance Tracker</h1>
+            <p>School & Coaching Class Management</p>
+        </header>
+
+        <!-- Stats Section -->
+        <div class="stats-container">
+            <div class="card total">Total Students: <span id="total-count">0</span></div>
+            <div class="card present">Present: <span id="present-count">0</span></div>
+            <div class="card absent">Absent: <span id="absent-count">0</span></div>
+        </div>
+
+        <!-- Add Student Form -->
+        <form id="student-form">
+            <input type="text" id="student-name" placeholder="Student ka Naam" required>
+            <input type="number" id="roll-no" placeholder="Roll Number" required>
+            <button type="submit" class="btn-add">+ Add Student</button>
+        </form>
+
+        <!-- Attendance Table -->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Roll No</th>
+                        <th>Naam</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="student-list">
+                    <!-- Dynamic Data Here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
